@@ -1,0 +1,29 @@
+name: Deploy ai500 to server
+
+on:
+  push:
+    branches:
+      - main   # change if your default branch is 'master' or something else
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1.0.0
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          script: |
+            set -e
+            cd /root/ai500-iceberg
+            git pull origin main
+            npm install
+            npm run build
+            rm -rf /var/www/ai500.dilyor.dev/*
+            cp -r dist/* /var/www/ai500.dilyor.dev/
