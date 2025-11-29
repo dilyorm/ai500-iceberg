@@ -1,4 +1,4 @@
-# AI-Powered Loan Processing Platform
+
 
 A comprehensive landing page for the loan automation platform built for AI500 Hackathon Stage 1.
 
