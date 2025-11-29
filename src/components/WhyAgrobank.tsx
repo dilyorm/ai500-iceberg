@@ -98,7 +98,7 @@ const WhyAgrobank = () => {
         >
           <h3 className="text-2xl font-semibold mb-6 text-center">Solution Tailored for Agrobank</h3>
           <div className="grid md:grid-cols-3 gap-6">
-            {features.map((feature, index) => (
+            {features.map((feature) => (
               <div key={feature.title} className="text-center">
                 <h4 className="font-semibold mb-2 text-primary-400">{feature.title}</h4>
                 <p className="text-white/70 text-sm">{feature.description}</p>

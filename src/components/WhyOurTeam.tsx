@@ -87,7 +87,7 @@ const WhyOurTeam = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          {proofPoints.map((point, index) => (
+          {proofPoints.map((point) => (
             <div key={point.metric} className="glass-card p-6 text-center">
               <h4 className="text-2xl font-bold mb-2 gradient-text">{point.metric}</h4>
               <p className="text-white/70 text-sm">{point.description}</p>
