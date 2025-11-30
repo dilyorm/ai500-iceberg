@@ -7,6 +7,7 @@ const Team = () => {
       role: 'Project Manager & Quality Lead',
       owns: 'Leads product scope, timelines, demo clarity. Coordinates implementation. Oversees QA, testing & reliability. Makes sure assistant interactions & flows are intuitive. Ensures clean, finished prototype delivery.',
       skills: ['Project Management', 'QA & Testing', 'Product Coordination', 'User Experience'],
+      cv: '/Zilolakhon Yoldosheva_CV (2).pdf',
       links: {
         github: '#',
         linkedin: '#',
@@ -18,6 +19,7 @@ const Team = () => {
       owns: 'Designs the AI assistant + governed data access. Builds RAG pipelines, vector search, summarization. Implements conversational flows for business users. Ensures assistant answers correctly using allowed datasets.',
       skills: ['Python', 'RAG Pipelines', 'Vector Search', 'LLMs', 'LangChain'],
       aiTools: ['OpenAI API', 'LangChain', 'Vector DBs', 'RAG'],
+      cv: '/Dilyorbek.pdf',
       links: {
         github: '#',
         linkedin: '#',
@@ -29,6 +31,7 @@ const Team = () => {
       owns: 'Implements OCR → Extraction → Data structuring pipeline. Develops credit scoring model / feature pipeline. Integrates automation engine with AI assistant. Ensures system runs on FastAPI + Docker smoothly.',
       skills: ['Python', 'FastAPI', 'OCR', 'ML', 'XGBoost', 'Docker'],
       aiTools: ['Tesseract', 'Azure Form Recognizer', 'scikit-learn'],
+      cv: '/Azizbek Xasanov.pdf',
       links: {
         github: '#',
         linkedin: '#',
@@ -99,27 +102,38 @@ const Team = () => {
                 )}
               </div>
 
-              <div className="flex gap-3 mt-auto pt-4 border-t border-white/10">
-                {member.links.github && member.links.github !== '#' && (
+              <div className="flex flex-col gap-2 mt-auto pt-4 border-t border-white/10">
+                {member.cv && (
                   <a
-                    href={member.links.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-white/60 hover:text-white transition-colors text-sm"
+                    href={member.cv}
+                    download
+                    className="px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white text-sm font-medium rounded-lg transition-colors text-center"
                   >
-                    GitHub →
+                    📄 Download CV
                   </a>
                 )}
-                {member.links.linkedin && member.links.linkedin !== '#' && (
-                  <a
-                    href={member.links.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-white/60 hover:text-white transition-colors text-sm"
-                  >
-                    LinkedIn →
-                  </a>
-                )}
+                <div className="flex gap-3 justify-center">
+                  {member.links.github && member.links.github !== '#' && (
+                    <a
+                      href={member.links.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-white/60 hover:text-white transition-colors text-sm"
+                    >
+                      GitHub →
+                    </a>
+                  )}
+                  {member.links.linkedin && member.links.linkedin !== '#' && (
+                    <a
+                      href={member.links.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-white/60 hover:text-white transition-colors text-sm"
+                    >
+                      LinkedIn →
+                    </a>
+                  )}
+                </div>
               </div>
             </motion.div>
           ))}

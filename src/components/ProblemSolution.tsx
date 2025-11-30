@@ -4,21 +4,6 @@ const ProblemSolution = () => {
   return (
     <section id="problem" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        {/* Domain Label */}
-        <motion.div
-          className="mb-8"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary-500/20 border border-primary-500/30 rounded-full">
-            <span className="text-primary-400 text-sm font-medium">
-              Domain: Productivity & Financial Services (Banking, SME & Microloans)
-            </span>
-          </div>
-        </motion.div>
-
         {/* Problem Section */}
         <motion.div
           className="mb-12"

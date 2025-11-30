@@ -30,6 +30,7 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
+              <span className="text-primary-400 text-sm font-medium">Built with Uzbekistan — Ready for Agrobank</span>
             </motion.div>
 
             <motion.h1

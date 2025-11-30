@@ -3,31 +3,35 @@ import { motion } from 'framer-motion';
 const Roadmap = () => {
   const phases = [
     {
-      title: 'Phase 1 – Core Automation Prototype',
+      title: 'Phase 1 – Automation System Development',
       items: [
-        'Document upload, OCR & extraction',
-        'Simple scoring and decision recommendation',
+        'Build document processing pipeline (OCR → Extraction → Data structuring)',
+        'Develop automation workflow engine',
+        'Create integration layer for existing components',
       ],
     },
     {
-      title: 'Phase 2 – Data Model & Governance',
+      title: 'Phase 2 – Integration of Existing Components',
       items: [
+        'Integrate ready credit scoring ensemble model',
+        'Connect existing AI agent (multi-platform, user data capable)',
         'Unified data model for applications, decisions, and risk',
-        'Role-based filters for different users',
       ],
     },
     {
-      title: 'Phase 3 – AI Assistant MVP',
+      title: 'Phase 3 – AI Assistant & Data Access',
       items: [
-        'Chat UI with fixed question templates (e.g. key KPIs, basic reports)',
-        'Use curated data model for safe responses',
+        'Build RAG pipeline connecting AI agent to automation data',
+        'Implement role-based data access and governance',
+        'Chat UI with question templates and basic reports',
       ],
     },
     {
-      title: 'Phase 4 – Full Copilot',
+      title: 'Phase 4 – Full Platform Integration',
       items: [
-        'Free-form questions, follow-ups, saved dashboards, alerts',
-        'Integration with mobile and internal tools',
+        'End-to-end workflow: documents → automation → scoring → AI assistant',
+        'Free-form questions, follow-ups, saved dashboards',
+        'Production deployment and pilot testing',
       ],
     },
   ];
@@ -42,8 +46,18 @@ const Roadmap = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          Roadmap: From Engine to Assistant
+          Roadmap: Integrating Our Existing Components
         </motion.h2>
+        
+        <motion.p
+          className="text-center text-white/70 mb-12 max-w-3xl mx-auto"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
+          We already have a <strong className="text-primary-400">ready credit scoring ensemble model</strong> and a <strong className="text-primary-400">ready AI agent</strong> that works across multiple platforms with user data. Our focus is building the automation system and integrating these components.
+        </motion.p>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
           {phases.map((phase, index) => (
