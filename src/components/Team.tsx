@@ -4,8 +4,8 @@ const Team = () => {
   const teamMembers = [
     {
       name: 'Zilolaxon Yo\'ldosheva',
-      role: 'Project Manager & Quality Lead',
-      owns: 'Leads product scope, timelines, demo clarity. Coordinates implementation. Oversees QA, testing & reliability. Makes sure assistant interactions & flows are intuitive. Ensures clean, finished prototype delivery.',
+      role: 'Project Manager & QA Lead',
+      owns: 'IT Project Manager at SATashkent. Former PM at Beeline & ITIC Uzbekistan. 2× Hackathon winner (AI Girls Bootcamp, Hackunicorn 2025). Experienced in roadmaps, QA, UX flows.',
       skills: ['Project Management', 'QA & Testing', 'Product Coordination', 'User Experience'],
       cv: '/Zilolakhon Yoldosheva_CV (2).pdf',
       links: {
@@ -15,10 +15,10 @@ const Team = () => {
     },
     {
       name: 'Dilyorbek Muhammadjonov',
-      role: 'AI Assistant & Intelligence Lead',
-      owns: 'Designs the AI assistant + governed data access. Builds RAG pipelines, vector search, summarization. Implements conversational flows for business users. Ensures assistant answers correctly using allowed datasets.',
-      skills: ['Python', 'RAG Pipelines', 'Vector Search', 'LLMs', 'LangChain'],
-      aiTools: ['OpenAI API', 'LangChain', 'Vector DBs', 'RAG'],
+      role: 'AI/ML Engineer & Creator of BIL',
+      owns: 'AI & Robotics bachelor at New Uzbekistan University. Built BIL, the multi-platform AI agent. Strong in NLP, embeddings, RAG, summarization. ICPC finalist (top 12 Uzbekistan).',
+      skills: ['Python', 'RAG Pipelines', 'Vector Search', 'LLMs', 'LangChain', 'NLP'],
+      aiTools: ['OpenAI API', 'LangChain', 'Vector DBs', 'RAG', 'BIL Agent'],
       cv: '/Dilyorbek.pdf',
       links: {
         github: '#',
@@ -27,10 +27,10 @@ const Team = () => {
     },
     {
       name: 'Azizbek Xasanov',
-      role: 'ML/Automation Engine Lead',
-      owns: 'Implements OCR → Extraction → Data structuring pipeline. Develops credit scoring model / feature pipeline. Integrates automation engine with AI assistant. Ensures system runs on FastAPI + Docker smoothly.',
-      skills: ['Python', 'FastAPI', 'OCR', 'ML', 'XGBoost', 'Docker'],
-      aiTools: ['Tesseract', 'Azure Form Recognizer', 'scikit-learn'],
+      role: 'ML/Automation Engineer',
+      owns: 'Worked on adaptive ML pipelines, RAG systems. Strong in PyTorch, Keras, deployment (FastAPI + Docker). Hackathon winner (Urban.Tech).',
+      skills: ['Python', 'FastAPI', 'OCR', 'ML', 'XGBoost', 'Docker', 'PyTorch', 'Keras'],
+      aiTools: ['Tesseract', 'Azure Form Recognizer', 'scikit-learn', 'RAG Systems'],
       cv: '/Azizbek Xasanov.pdf',
       links: {
         github: '#',

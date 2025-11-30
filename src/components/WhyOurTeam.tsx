@@ -3,39 +3,39 @@ import { motion } from 'framer-motion';
 const WhyOurTeam = () => {
   const reasons = [
     {
-      title: 'Full-Stack Coverage',
-      description: 'We cover backend, ML, document AI, frontend, DevOps, and integrations—all critical components for this platform.',
-      icon: '🔧',
+      title: 'We Already Have Two Production-Ready Components',
+      description: 'BIL (multi-platform agent) + Credit Scoring Engine are real and working, not theoretical. This gives us a head start.',
+      icon: '✅',
     },
     {
-      title: 'Experience with Financial Systems',
-      description: 'Team members have experience with fintech, banks, or complex APIs, understanding the regulatory and technical challenges.',
-      icon: '💼',
-    },
-    {
-      title: 'Deep Focus on AI + Automation',
-      description: 'Familiar with GPT-4 / Claude, LangChain, orchestration, and productionizing ML models in real-world applications.',
+      title: 'Experience in AI Agents, ML Pipelines, Deployment',
+      description: 'Team members have hands-on experience building AI agents, ML models, and deploying production systems.',
       icon: '🤖',
     },
     {
-      title: 'Complete MVP Blueprint',
-      description: 'Clear architecture for document processing, credit scoring, AI assistant layer, banking connectors, and notifications, plus a detailed build plan.',
+      title: 'PM + QA + Delivery Expertise',
+      description: 'We have project management, quality assurance, and proven delivery track record from past hackathon wins.',
       icon: '📋',
+    },
+    {
+      title: 'Perfect Skill Coverage',
+      description: 'PM & Quality, ML & Scoring, Agent Development, Automation Pipeline—all critical areas are covered.',
+      icon: '🔧',
     },
   ];
 
   const proofPoints = [
     {
-      metric: 'Past Projects',
-      description: 'Successfully shipped AI/ML products in production',
+      metric: 'Past Hackathon Wins',
+      description: 'Show execution ability and ability to ship complex AI projects',
     },
     {
-      metric: 'Hackathon Wins',
-      description: 'Experience building and presenting technical solutions',
+      metric: 'Shipped Complex AI Projects',
+      description: 'BIL and credit scoring engine are real, working systems',
     },
     {
-      metric: 'Technical Expertise',
-      description: 'Combined experience in banking, AI, and software engineering',
+      metric: 'Skills Perfectly Cover Project',
+      description: 'PM & Quality, ML & Scoring, Agent Development, Automation Pipeline',
     },
   ];
 
@@ -49,7 +49,7 @@ const WhyOurTeam = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          Why We're the Right Team
+          Why Our Team Can Solve This
         </motion.h2>
 
         <motion.p
@@ -59,19 +59,18 @@ const WhyOurTeam = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          We connect our team's expertise to the complexity of this problem, bringing together the right skills, 
-          experience, and execution plan to build a production-ready loan automation platform with an AI assistant.
+          We already have two production-ready components (BIL + Scoring Engine). We are experienced in AI agents, ML pipelines, and deployment. Past hackathon wins show execution ability. We have shipped complex AI projects before. Our skills perfectly cover the project.
         </motion.p>
 
         <div className="grid md:grid-cols-2 gap-6 mb-12">
-          {reasons.map((reason, index) => (
+          {reasons.map((reason) => (
             <motion.div
               key={reason.title}
               className="glass-card glass-card-hover p-6"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
+              transition={{ duration: 0.6 }}
             >
               <div className="text-4xl mb-4">{reason.icon}</div>
               <h3 className="text-xl font-semibold mb-3">{reason.title}</h3>
@@ -81,18 +80,21 @@ const WhyOurTeam = () => {
         </div>
 
         <motion.div
-          className="grid md:grid-cols-3 gap-6"
+          className="glass-card p-8 bg-primary-500/10 border-primary-500/30"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          {proofPoints.map((point) => (
-            <div key={point.metric} className="glass-card p-6 text-center">
-              <h4 className="text-2xl font-bold mb-2 gradient-text">{point.metric}</h4>
-              <p className="text-white/70 text-sm">{point.description}</p>
-            </div>
-          ))}
+          <h3 className="text-2xl font-semibold mb-6 text-center text-primary-400">This Gives Judges Confidence the Project Is Feasible</h3>
+          <div className="grid md:grid-cols-3 gap-6">
+            {proofPoints.map((point) => (
+              <div key={point.metric} className="text-center">
+                <h4 className="text-xl font-bold mb-2 gradient-text">{point.metric}</h4>
+                <p className="text-white/70 text-sm">{point.description}</p>
+              </div>
+            ))}
+          </div>
         </motion.div>
       </div>
     </section>
@@ -100,4 +102,3 @@ const WhyOurTeam = () => {
 };
 
 export default WhyOurTeam;
-

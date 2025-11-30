@@ -12,18 +12,23 @@ const ProblemSolution = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary-500/20 border border-primary-500/30 rounded-full mb-6">
+            <span className="text-primary-400 text-sm font-medium">
+              Domain: Productivity / Financial Services
+            </span>
+          </div>
+
           <h2 className="text-4xl md:text-5xl font-bold mb-8 gradient-text">
-            Loan Processing Is Slow — and Insights Are Locked in Silos
+            The Problem: Loan Processing Is Still Slow, Manual, and Repetitive
           </h2>
           
-          <div className="space-y-6 mb-8">
+          <div className="space-y-4 mb-8">
             <div className="glass-card p-6">
               <div className="flex items-start gap-4">
-                <div className="text-3xl">📄</div>
+                <div className="text-3xl">👤</div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Manual Document Review</h3>
-                  <p className="text-white/70">
-                    Underwriters manually read dozens of pages per application (IDs, statements, contracts).
+                  <p className="text-white/80">
+                    <strong className="text-white">Human staff manually check</strong> income, identity, bank statements, and forms
                   </p>
                 </div>
               </div>
@@ -31,17 +36,22 @@ const ProblemSolution = () => {
 
             <div className="glass-card p-6">
               <div className="flex items-start gap-4">
-                <div className="text-3xl">❓</div>
+                <div className="text-3xl">❌</div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Questions Go Unanswered</h3>
-                  <p className="text-white/70 mb-3">
-                    Risk and business teams can't quickly answer simple questions like:
+                  <p className="text-white/80">
+                    <strong className="text-white">Errors happen</strong> because of manual data entry
                   </p>
-                  <ul className="list-disc list-inside space-y-1 text-white/70 ml-4">
-                    <li>"How many high-risk loans did we approve this week?"</li>
-                    <li>"What's our average processing time for SME loans?"</li>
-                    <li>"Which applications are stuck in manual review?"</li>
-                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="glass-card p-6">
+              <div className="flex items-start gap-4">
+                <div className="text-3xl">⏱️</div>
+                <div>
+                  <p className="text-white/80">
+                    <strong className="text-white">Scoring is slow and inconsistent</strong>
+                  </p>
                 </div>
               </div>
             </div>
@@ -50,19 +60,41 @@ const ProblemSolution = () => {
               <div className="flex items-start gap-4">
                 <div className="text-3xl">📊</div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Data Scattered Across Systems</h3>
-                  <p className="text-white/70">
-                    Data is scattered across systems; even with automation, business users still wait for reports.
+                  <p className="text-white/80">
+                    <strong className="text-white">Business teams lack real-time insights</strong> into loan quality
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="glass-card p-6">
+              <div className="flex items-start gap-4">
+                <div className="text-3xl">⚙️</div>
+                <div>
+                  <p className="text-white/80">
+                    <strong className="text-white">Automation tools usually require complex rule-based setups</strong>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="glass-card p-6">
+              <div className="flex items-start gap-4">
+                <div className="text-3xl">📱</div>
+                <div>
+                  <p className="text-white/80">
+                    <strong className="text-white">Systems do not work across platforms</strong> (web, mobile, desktop), limiting adoption
                   </p>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Closing statement */}
+          {/* Why It Matters */}
           <div className="glass-card p-6 bg-primary-500/10 border-primary-500/30">
+            <h3 className="text-xl font-semibold mb-3 text-primary-400">Why It Matters</h3>
             <p className="text-lg text-white/90 leading-relaxed">
-              We solve both problems: we automate the loan workflow <strong className="text-white">and</strong> make the resulting data instantly usable through an AI assistant.
+              Banks and lending institutions waste enormous time on repetitive tasks that intelligent agents can automate instantly.
             </p>
           </div>
         </motion.div>

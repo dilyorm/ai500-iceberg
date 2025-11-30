@@ -39,8 +39,7 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
             >
-              AI Loan Automation with a{' '}
-              <span className="text-primary-400">Built-In AI Assistant</span>
+              <span className="text-primary-400">Agent-Driven</span> Loan Automation System
             </motion.h1>
 
             <motion.p
@@ -49,7 +48,7 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              We automate loan processing end-to-end — and give business teams an AI copilot that can answer questions, generate reports, and surface risks in real time.
+              We combine our ready credit scoring model and our multi-platform agent BIL to build an intelligent automation system that processes loan applications end-to-end using autonomous AI agents.
             </motion.p>
 
             <motion.div
@@ -59,16 +58,16 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 0.5 }}
             >
               <a
-                href="#solution"
+                href="#problem"
                 className="px-8 py-4 bg-primary-600 hover:bg-primary-700 text-white font-semibold rounded-lg transition-all hover:shadow-lg hover:shadow-primary-500/50"
               >
-                See How It Works
+                View Problem → Solution
               </a>
               <a
                 href="#roadmap"
                 className="px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-lg border border-white/20 transition-all"
               >
-                View Roadmap
+                Explore Roadmap
               </a>
             </motion.div>
           </motion.div>
