@@ -38,23 +38,15 @@ const Demo = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <div className="bg-black/30 rounded-xl overflow-hidden border border-white/10">
-              <div className="aspect-video bg-black/50 flex items-center justify-center">
-                {/* Replace YOUR_VIDEO_URL with your actual video URL (YouTube, Vimeo, etc.) */}
-                <div className="text-center text-white/50 p-8">
-                  <p className="text-xl mb-3">📹</p>
-                  <p className="text-sm">Add your video embed URL in Demo.tsx</p>
-                </div>
-                {/* Uncomment and add your video URL when ready:
-                <iframe
-                  width="100%"
-                  height="100%"
-                  src="YOUR_VIDEO_URL"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  className="w-full h-full"
-                ></iframe>
-                */}
+              <div className="aspect-video bg-black/50">
+                <video
+                  className="w-full h-full object-contain"
+                  controls
+                  preload="metadata"
+                >
+                  <source src="/Comp 1.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
               </div>
             </div>
           </motion.div>
