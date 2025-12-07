@@ -44,6 +44,9 @@ const Demo = () => {
                   controls
                   preload="metadata"
                 >
+                  {/* Replace with your server URL after uploading the video */}
+                  <source src="https://iceberg.dilyor.dev/videos/Comp-1.mp4" type="video/mp4" />
+                  {/* Fallback for local development - remove in production */}
                   <source src="/Comp 1.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
