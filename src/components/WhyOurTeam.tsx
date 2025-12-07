@@ -24,21 +24,6 @@ const WhyOurTeam = () => {
     },
   ];
 
-  const proofPoints = [
-    {
-      metric: 'Past Hackathon Wins',
-      description: 'Show execution ability and ability to ship complex AI projects',
-    },
-    {
-      metric: 'Shipped Complex AI Projects',
-      description: 'BIL and credit scoring engine are real, working systems',
-    },
-    {
-      metric: 'Skills Perfectly Cover Project',
-      description: 'PM & Quality, ML & Scoring, Agent Development, Automation Pipeline',
-    },
-  ];
-
   return (
     <section id="why-our-team" className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-900">
       <div className="max-w-7xl mx-auto">
@@ -62,7 +47,7 @@ const WhyOurTeam = () => {
           We already have two production-ready components (BIL + Scoring Engine). We are experienced in AI agents, ML pipelines, and deployment. Past hackathon wins show execution ability. We have shipped complex AI projects before. Our skills perfectly cover the project.
         </motion.p>
 
-        <div className="grid md:grid-cols-2 gap-6 mb-12">
+        <div className="grid md:grid-cols-2 gap-6">
           {reasons.map((reason) => (
             <motion.div
               key={reason.title}
@@ -78,24 +63,6 @@ const WhyOurTeam = () => {
             </motion.div>
           ))}
         </div>
-
-        <motion.div
-          className="glass-card p-8 bg-primary-500/10 border-primary-500/30"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-        >
-          <h3 className="text-2xl font-semibold mb-6 text-center text-primary-400">This Gives Judges Confidence the Project Is Feasible</h3>
-          <div className="grid md:grid-cols-3 gap-6">
-            {proofPoints.map((point) => (
-              <div key={point.metric} className="text-center">
-                <h4 className="text-xl font-bold mb-2 gradient-text">{point.metric}</h4>
-                <p className="text-white/70 text-sm">{point.description}</p>
-              </div>
-            ))}
-          </div>
-        </motion.div>
       </div>
     </section>
   );
